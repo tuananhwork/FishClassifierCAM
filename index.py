@@ -38,7 +38,7 @@ st.write("Upload an image of a fish, and the model will predict its species.")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
-st.write("Don't have fish? Download Dataset to test")
+st.warning("Don't have fish? Download Dataset to test")
 st.link_button("Download now", 'https://www.facebook.com/chu.anh.11')
 
 if uploaded_file is not None:
