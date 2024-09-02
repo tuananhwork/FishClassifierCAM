@@ -39,7 +39,7 @@ st.write("Upload an image of a fish, and the model will predict its species.")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 st.warning("Don't have fish? Download Dataset to test")
-st.link_button("Download now", 'https://www.facebook.com/chu.anh.11')
+st.link_button("Download now", 'https://drive.google.com/drive/folders/1jZj-TqDK2nUftJtN7Cytvx0JlYYoh7V7?usp=sharing')
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
@@ -50,4 +50,6 @@ if uploaded_file is not None:
     predicted_class = predict(image)
     predicted_species = species_dict[predicted_class]
     st.success(f"Prediction: {predicted_species}")
+
+st.link_button("Contact me", 'https://www.facebook.com/chu.anh.11')
 
